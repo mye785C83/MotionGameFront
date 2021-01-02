@@ -177,6 +177,7 @@ class _GamePageState extends State<GamePage> {
           counting--;
         }
       });
+      // readyView
       return Center(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -209,6 +210,7 @@ class _GamePageState extends State<GamePage> {
           counting--;
         }
       });
+      // calculatingView
       return Center(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

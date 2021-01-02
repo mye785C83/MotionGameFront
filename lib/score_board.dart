@@ -46,7 +46,7 @@ class _ScoreBoardState extends State<ScoreBoard> {
                       255, 242, 200, 162) // end color of the gradation
                 ])),
           ),
-          Positioned(top: _height * 0.15, child: _table()),
+          Positioned(top: _height * 0.15, child: _board()),
           Positioned(bottom: _height * 0.03, child: _back()),
         ]),
       ),
@@ -79,7 +79,7 @@ class _ScoreBoardState extends State<ScoreBoard> {
     ]);
   }
 
-  Widget _table() {
+  Widget _board() {
     Size _size = MediaQuery.of(context).size;
     double _width = _size.width;
     double _height = _size.height;
