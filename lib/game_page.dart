@@ -124,7 +124,8 @@ class _GamePageState extends State<GamePage> {
                           if (currState != GameState.counting) ScoreInfo(),
                         ],
                       );
-                    } else {
+                    }
+                    else {
                       return CircularProgressIndicator(
                         valueColor: AlwaysStoppedAnimation<Color>(Colors.lime),
                       );

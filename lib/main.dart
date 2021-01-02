@@ -248,9 +248,12 @@ class _FindPartnerState extends State<FindPartner> {
 
   Future<Widget> findingTimer() async {
     if (findPartner) {
-      setState(() {
-        findPartner = false;
-      });
+      if(mounted){
+        setState(() {
+          findPartner = false;
+          print("findPartner: ${findPartner}");
+        });
+      }
       return GamePage(nickname: _nickname);
     } else {
       counting = 2;

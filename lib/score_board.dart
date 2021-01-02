@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:motion_game_front/main.dart';
 
 class ScoreBoard extends StatefulWidget {
   @override
@@ -167,7 +168,11 @@ class _ScoreBoardState extends State<ScoreBoard> {
     double _height = _size.height;
     return GestureDetector(
       onTap: () {
-        Navigator.pop(context);
+        Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(
+              builder: (context) => MyHomePage(),
+            ));
       },
       child: Container(
           width: _width * 0.55,
